@@ -101,6 +101,56 @@
 
  Um aspecto importante durante o planejamento é enxergar entre as histórias, entre o que tem que ser feito para o nosso cliente, para o nosso produto, quais são os requisitos funcionais e quais são os requisitos não funcionais.
 
- Requisitos funcionais são requisitos de negócio, ou seja, requisitos que descrevem como nosso cliente quer fazer negócios, como ele quer vender, como ele quer comprar, como é que ele quer atender o seu público.
+ **Requisitos funcionais** são requisitos de negócio, ou seja, requisitos que descrevem como nosso cliente quer fazer negócios, como ele quer vender, como ele quer comprar, como é que ele quer atender o seu público.
 
- Requisitos não funcionais são requisitos técnicos, ou seja, como a gente vai viabilizar aquela construção, aquele produto, daquela forma.
+ Então, se os nossos requisitos funcionais são requisitos de negócio e de como a empresa quer trabalhar, de como ela atende, Ela deve seguir uma característica de qualidade, regida pela ISO 25.010, chamada *Adequação Funcional*.
+ 
+ Dentro desta característica da qualidade, temos que ter toda aquela preucupação se o software faz o que deveria fazer, se ele não faz alguma coisa diferente do previsto, se ele vai ter realmente o comportamento que nós esperamos.
+
+ **Requisitos não funcionais** são requisitos técnicos, ou seja, como a gente vai viabilizar aquela construção, aquele produto, daquela forma.
+
+ Quando a gente fala do não funcional, que são os requisitos técnicos, ou seja, como esse software vai ser feito, vai ser realizado, Nós temos todas as demais características da qualidade, o que seria tudo, menos a adequação funcional, na ISO 25.010. Então, todas as outras características da qualidade, como: Usabilidade, compatibilidade, confiabilidade, eficiência, manutenibilidade, portabilidade, segurança, todas elas são características técnicas, ou seja, características funcionais.
+
+
+## Estórias de Usuários
+ ### User Stories
+
+ O planejamento depende completamente de entendermos o que o cliente quer. Hoje em dia, nós chamamos o desejo do cliente, a sua necessidade, de *estória do usuário*. Resumidamente, a estória do usuário é aquilo que o cliente pediu para a gente fazer, o que ele quer que seja construído, que seja entregue.
+
+ Podemos ter várias estórias de como o software deve ser construído, como ele deve ser testado, que podem formar algo maior, mas, cada estória tem que ser independente e tem que descrever bem o que a gente precisa construir e o que precisa testar.
+ 
+ Outro ponto chave é ela ser negociável, como vimos anteriormente.
+
+ É imporatne, também, é entender o quão estimável aquela estória é. Se eu consigo pegar um estória e saber dizer quantas horas serão gastas com ela ou quão valiosa é determinada estória de usuário. 
+ 
+ Então, a estória precisa ter informações suficientes para a gente poder dizer não, dizer se vale a pena ou não gastar recursos naquela estória, naquela função do software. É preciso ter informação para fazer uma estimativa, mas, e se uma estória não tem informação para que esta estimativa seja feita? Você terá que poerguntar mais. Você, como profissional de teste, terá que interpretar e dizer se você possui informação para fazer essa estimativa de quanto tempo gastará para construir algo do software. Você poderá ter que conversar com o cliente, com o gerente de produto, enfim, tentar obter mais informações para que determinada estória seja estimável.
+
+ Quando alguém usa no texto da estória de usuário frases como: Esta estória tem que ser rápida, tem que ser segura, tem que ser fácil de navegar, tem que ter layout moderno, etc. São todas informações muito subjetivas, essas informações não são mensuráveis, não são estimáveis. Eu precisaria que o cliente dissesse quantos cliques vai ter o processo de compras, quantos segundos pode demorar para carregar uma página, eu gostaria que ele me definisse protocolos de segurança ou padrões de segurança a serem seguidos. Ou seja, é preciso transformar aquilo de "rápido, moderno, seguro,..." em algo palpável, algo que dê para estimar e, também, algo que seja testável, que lá na frente consigamos ver que aquilo que foi pedido que o software faça foi conseguido ou não.
+
+ Apesar de tudo isso, a estória não pode ser grande e complicada demais, ela precisa ser objetiva e direta. Ela não precisa ser extremamente curta, mas, tem que ter o tamanho suficiente, sem enrolação.
+
+Um foco muito grande, deve ser definir, junto com o PO, os *critérios de aceite*, ou seja, o que eu preciso testar para provar que aquilo está funcionando? O que precisa dar resultado para que você fique convencido de que está funcionando? Esse é um ponto muito importante, não existe teste sem critério de aceitação, não existe teste sem resultado esperado. Por isso, ele precisa ser objetivo, ele precisa ser uma informação, um critério, que eu consiga medir, consiga ver claramente se deu certo ou se deu errado.
+
+Essas estórias vão ficar reunidas no **Product Backlog**, que é basicamente um conjunto de todas as estórias de usuários que tivermos. Isto é focado muito no Product Owner, mas todo mundo do time pode colaborar com essa criação. Então, essas estórias, todas elas são priorizadas pelo PO, ele é que é a pessoa que deveria ter a visão do negócio para saber qual seria um ranking da estória mais importante até a estória menos importante para o negócio.
+
+
+## Sprint
+
+ Um outro conceito que estamos todo o tempo repetindo e que é uma ideia muito fácil de entender é o Sprint.
+
+ O que é uma Sprint? É um ciclo de trabalho no qual a gente vai escolher quais estórias vamos realizar. 
+
+ Então temos um conjunto grande de estórias do Product Backlog, escolhemos quais estórias irão fazer parte do *Sprint Backlog*, ou seja, o que faremos nesta Sprint. É simplesmente um ciclo de entendimento, construção, teste e entrega, mas, que  é um desafio para que sejamos capazes de entregar um produto com qualidade e dentro de um prazo que, muitas vezes, é curto. 
+
+ No XP, ou, *Extreme Programming* trabalhamos com o conceito de Sprint durando uma semana. Já no *Scrum*, varia de duas a quatro semanas, sendo que não devemos ficar variando o tempo de duração de cada sprint, se será duas semanas, então todas as sprint devem durar duas semanas. Também existe o *Kanban*, que pode até não ter Sprint, ou ele pode ter Sprint como o Scrum, pois, ele quer atender as demandas de uma maneira mais individual, porém, para atender as demandas de uma maneira individualizada, não como grupo, eu preciso ter muita automação de teste, porque eu preciso garantir que qualquer menor mudança não vai quebrar o que já está funcionando. Muita gente acha que o Kanban é só um tipo de quadro do Scrum, mas o Kanban vai muito além disso. No caso do Kanban, não precisa ter Sprint, mas, no caso do XP e do Scrum é obrigatório ter um período de tempo para que a gente possa construir, testar e implantar.
+
+
+## Sprint Backlog
+
+ O Sprint backlog é aquilo que nós selecionamos. As estórias que nós selecionamos para aquela Sprint ou uma estória mais complexa, mais demoraa. As vezes uma Sprint pode ter várias estórias menores, médias ou grandes, pode haver uma mistura, dependendo da capacidade do time.
+
+ Então, esse Sprint Backlog é sobre o que nós somos realmente capazes de fazer dentro de um ciclo determinado.
+
+
+## Épicos
+### Epics
