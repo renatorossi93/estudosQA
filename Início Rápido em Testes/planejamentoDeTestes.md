@@ -154,3 +154,57 @@ Essas estórias vão ficar reunidas no **Product Backlog**, que é basicamente u
 
 ## Épicos
 ### Epics
+
+ Nem todas, mas algumas empresas organizam, também, as suas estórias em Épicos. Um épico é uma estória grande.
+ 
+ Vamos imaginar um épico como uma visão do todo, ou seja, várias estórias que se juntam para formar uma estória maior, bem ampla, uma grande entrega, com um conjunto de funcionalidades, um conjunto de estórias mais relevantes do que uma estória sozinha. Éssa é a ideia central por trás do épico.
+ Nem tudo pode ser resolvido em duas semanas, como o tempo de uma sprint, por isso temos que ter essa visão um pouco mais ampla, saber onde queremos chegar, ter uma grande visãoo dos nossos objetivos e metas.
+
+
+## Análise de Riscos
+### Risks Analysis
+
+ Uma das formas mais eficientes de planejar os seus testes é a partir de uma análise de riscos.
+ Você tendo requisitos funcionais e não funcionais, estórias, épicos, etc. Então, você já começa a ter um primeiro vislumbre do que pode dar errado e essa informação ou conjunto de informações é que irão te ajudar a fazer uma boa análise de riscos.
+ 
+ A análise de riscos nunca deve ser feita sozinha, ela deve ser, no mínimo, feita em conjunto com o time, mas, seria bom se envolvesse pessoas de todas as áreas e que, de alguma forma, são impactadas pelo projeto.
+ O risco é algo que pode dar errado, que tem chance de dar errado, pois, quando temos certeza de que algo dará errado, então isso é um problema, não um risco.
+
+ Agora, como é o processo de análise de risco? Como fazemos para analisar o risco?
+ Normalmente, a área de análise de riscos é dividida em algumas etapas.
+ A primeira etapa é a **identificação** dos riscos, o que normalmente envolve fazer reuniões com o time e/ou com outros times para discutir o que pode dar errado e o que não pode dar errado.
+ Uma vez que fazemos a identificação, então começamos a analisar. Primeiro, é uma lista bruta do que pode dar errado, depois, começamos a ter uma lista com algum grau de detalhe, até termos uma lista que vai ter uma probabilidade dos itens da lista dar errado.
+ Normalmente começamos com uma escala simples: probabilidade alta, média ou baixa.
+
+ Também temos que considerar o **impacto** que aquele risco com chance de acontecer, terá sob o produto, como um fator que pode ser de prejuízo para a empresa, o cliente e/ou o produto.
+ Escalamos o impacto, também, em alta, média e baixa escala, mas, também podemos escalar o impacto em números, como 1, 2, 3.
+
+ A próxima etapa seria o processo de **priorizar** os riscos a serem evitados. Para isto, existe uma fórmula de risco que definimos como: R = P x I, ou seja, risco é igual a probabilidade multiplicado pelo impacto.
+ Essa fórmula costuma cair em todo tipo de exame de certificação de gestão de projetos. A prtir desta fórmula, fazemos a conta para cada risco e, uma vez que temos todos os riscos calculados, podemos fazer um ranking do maior risco para o menor.
+ A partir daí, eu já sei por onde começar, qual risco atacar e porque eu tenho que atacar esse risco.
+
+ Essa ideia de seguir um ranking já serve como uma introdução, também, ao conceito de Análise de Pareto.
+
+ Em seguida, começamos a estabelecer uma **Estratégia de tratamento dos riscos**. Sabendo qual risco é maior, qual risco é medio e qual risco é menor, podemos agora definir estratégias para eliminar ou evitar o risco.
+ eliminar um risco em um projeto não garante que aquele risco não volte a contecer, pois, por alguma falha de gestão, aquele risco pode voltar a existir. Então, não podemos garantir que um risco seja eliminado para sempre e nunca mais volte.
+ O que podemos fazer é mitigar, minimizar ou prevenir um risco, reduzindo a sua probabilidade de acontecer ou o impacto do risco, caso aconteca, geralmente trabalhamos em um ou  outro, ou em reduzir a probabilidade ou em reduzir o impacto.
+
+ Também podemos *aceitar passivamente* um risco e não trabalhar nem mesmo para mitigar, prvenir ou elminar esse risco. Nesses casos, estamos lidando com riscos ínfimos e de baixíssimo impacto no projeto, e definimos que lidaremos com esses riscos caso o encontremos durante o desenvolvimento do produto.
+ Então, esse risco se daria em uma situação que, se não tiver nenhum outro contexto de criticicidade, poderia ser aceitável e só seria testado, trabalhado nele, em último caso, se sobrar tempo para isso.
+
+ Há, também, a forma de *aceitar ativamente* um risco, com um plano de contingência.
+ Por exemplo: Encontramos um bug onde os clientes não conseguirão trocar a senha pelo site, até este defeito ser resolvido, deixamos o suporte preparado para a demanda de reclamações sobre este problema, e/ou, avisamos os clientes, colocando um banner por exemplo neste caso, para visar que este erro existe e para o cliente entrar em contato com o suporte para trocar a sua senha enquanto este problema estiver sendo trabalhado.
+ Então, aceitar ativamente um risco é saber que ele pode acontecer e já deixar planejado o que fazer caso o risco aconteça, ou seja, estar preparado para agir somente se e quando o risco acontecer.
+ Lembrando sempre de planejar os riscos com todos os envolvidos no risco e no projeto do produto, para não deixar, neste exemplo, a equipe de suporte despreparada para ele.
+
+ Outra estratégia de tratamento de riscos seria transferir o risco, no caso para outra empresa. Um exemplo dessa estratégia seria o negócio de seguros, como o seguro de automóveis por exemplo. No seguro de automóvel, você está pagando para uma seguradora assumir o risco no seu lugar.
+ Agora, no caso de softwares, não existem empresas de seguros. Nesses casos, temos o exemplo de terceizar o desenvolvimento de um software, então há algumas cláusulas em contrato que podem ser usadas caso o software construído por essa terceirizada dê algum problema, para indenizar prejuízos operacionais de perda de clientes, de perda de negócios.
+ De toda forma, mesmo que um problema do seu software gere uma indenização por parte da empresa terceirizada que o desenvolveu, ainda há o prejúizo da imagem da sua empresa que, como já vimos, é de suma importância. 
+ Portanto, há de se considerar que, no caso de softwares, não há como transferir totalmente um risco para outra empresa.
+
+ Com tudo isso, temos também que **acompanhar os riscos**. Porque os riscos são dinâmicos, a chance de um risco acontecer pode aumentar, diminuir ou permanecer constante, então precisamos acompanhar os riscos para saber se eles estão aumentando ou diminuindo, por isso, deve se definir um período de acompanhamento dos riscos.
+ O período que definiremos para acompanhar um risco dependerá da natureza do risco. Tem riscos que deverão ser acompanhados frequentemente, outros diaramente, semanalmente, quinzenalmente, mensalmente ou anualmente, para cada risco que você listar, você deve definir de quanto em quanto tempo você irá voltar a olhar para aquele risco.
+ Ainda, terá de ser definido um responsável para aquele risco, alguém que terá que acompanhar e será responsável pelo risco em questão.
+
+
+ O instrumento principal da análise de risco é a chamada **Matriz de Risco**.
