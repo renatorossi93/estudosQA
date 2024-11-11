@@ -179,7 +179,7 @@ Essas estórias vão ficar reunidas no **Product Backlog**, que é basicamente u
  Também temos que considerar o **impacto** que aquele risco com chance de acontecer, terá sob o produto, como um fator que pode ser de prejuízo para a empresa, o cliente e/ou o produto.
  Escalamos o impacto, também, em alta, média e baixa escala, mas, também podemos escalar o impacto em números, como 1, 2, 3.
 
- A próxima etapa seria o processo de **priorizar** os riscos a serem evitados. Para isto, existe uma fórmula de risco que definimos como: R = P x I, ou seja, risco é igual a probabilidade multiplicado pelo impacto.
+ A próxima etapa seria o processo de **priorizar** os riscos a serem evitados. Para isto, existe uma fórmula de risco que definimos como: **R = P x I**, ou seja, risco é igual a probabilidade multiplicado pelo impacto.
  Essa fórmula costuma cair em todo tipo de exame de certificação de gestão de projetos. A prtir desta fórmula, fazemos a conta para cada risco e, uma vez que temos todos os riscos calculados, podemos fazer um ranking do maior risco para o menor.
  A partir daí, eu já sei por onde começar, qual risco atacar e porque eu tenho que atacar esse risco.
 
@@ -208,3 +208,29 @@ Essas estórias vão ficar reunidas no **Product Backlog**, que é basicamente u
 
 
  O instrumento principal da análise de risco é a chamada **Matriz de Risco**.
+ A matriz de riscos na qualidade de software é uma ferramenta que ajuda equipes a identificar, priorizar e mitigar riscos durante o processo de desenvolvimento e testes de software.
+ Ela se concentra em possíveis falhas que podem impactar a qualidade, como bugs críticos, falhas de segurança ou problemas de desempenho e auxilia na priorização de esforços de teste.
+
+ *Importância da Matriz de Riscos em Qualidade de Software*
+
+ - Priorização de Testes: A matriz ajuda a focar em áreas críticas que podem ter um impacto maior na qualidade, garantindo que os testes sejam realizados de forma eficiente.
+ - Gerenciamento de Riscos: Ao identificar riscos de forma proativa, a equipe pode implementar estratégias de mitigação, como adicionar testes extras ou corrigir bugs prioritários.
+ - Redução de Custos: A resolução antecipada de riscos evita problemas caros e demorados que podem surgir na produção.
+ - Comunicação: A matriz oferece uma maneira clara de comunicar quais riscos são mais preocupantes e por quê.
+ 
+ Exemplo de uma matriz de riscos: 
+
+ ![tabela exemplo de matriz de riscos](imagens/matriz_de_risco.png)
+
+ Como Funciona este exemplo:
+ - Identificar Riscos: A equipe de qualidade e desenvolvimento identifica possíveis riscos que podem comprometer a qualidade do software.
+ - Avaliar Impacto e Probabilidade: Cada risco é avaliado quanto ao impacto (o quão grave seria) e à probabilidade de ocorrer (a frequência com que isso pode acontecer).
+ - Determinar Severidade: A severidade é calculada com base no impacto e na probabilidade, ajudando a priorizar quais riscos abordar primeiro.
+ - Plano de Mitigação: Define as ações necessárias para mitigar ou eliminar o risco, como a implementação de testes específicos ou ajustes no código.
+ - Monitorar o Status: Acompanhar o progresso de mitigação de cada risco, ajustando conforme necessário.
+ 
+ Como Usar esta planilha de matriz de risco:
+ - Preencha a lista de riscos com base no sistema ou na funcionalidade em teste.
+ - Atribua valores de impacto e probabilidade para cada risco (por exemplo, Alta, Média, Baixa).
+ - Calcule a severidade (geralmente, uma combinação de impacto e probabilidade, como uma pontuação).
+ - Descreva o plano de mitigação e mantenha o status atualizado para acompanhar o progresso.
