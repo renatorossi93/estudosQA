@@ -207,7 +207,9 @@ Essas estórias vão ficar reunidas no **Product Backlog**, que é basicamente u
  Ainda, terá de ser definido um responsável para aquele risco, alguém que terá que acompanhar e será responsável pelo risco em questão.
 
 
- O instrumento principal da análise de risco é a chamada **Matriz de Risco**.
+## Matriz de Riscos
+### Risks Matrix
+ O instrumento principal da análise de risco é a chamada *Matriz de Risco*.
  A matriz de riscos na qualidade de software é uma ferramenta que ajuda equipes a identificar, priorizar e mitigar riscos durante o processo de desenvolvimento e testes de software.
  Ela se concentra em possíveis falhas que podem impactar a qualidade, como bugs críticos, falhas de segurança ou problemas de desempenho e auxilia na priorização de esforços de teste.
 
@@ -234,3 +236,87 @@ Essas estórias vão ficar reunidas no **Product Backlog**, que é basicamente u
  - Atribua valores de impacto e probabilidade para cada risco (por exemplo, Alta, Média, Baixa).
  - Calcule a severidade (geralmente, uma combinação de impacto e probabilidade, como uma pontuação).
  - Descreva o plano de mitigação e mantenha o status atualizado para acompanhar o progresso.
+
+
+## Análise de Pareto
+### Pareto Analysis
+
+ A análise de Pareto, ou diagrama de Pareto, nos ajuda a chegar em uma priorização dos testes, nos ajuda a saber por onde começar a testar e ele sempre se baseia em você ter algum tipo de restrição. Essas restrições podem estar relacionadas com o prazo, o orçamento, com as pessoas ou com os recursos.
+
+ A Análise de Pareto é baseada no princípio 80/20, que sugere que, em muitos casos, 80% dos problemas são causados por 20% das causas. Esse princípio ajuda a identificar e priorizar os problemas mais significativos para que a equipe possa focar onde terá o maior impacto.
+ Em um projeto de software, é comum que uma pequena quantidade de módulos ou funcionalidades seja responsável por uma grande parte dos bugs ou falhas.
+
+ Já o *Diagrama de pareto* é um gráfico de barras que organiza causas de problemas(como tipos de defeitos) em ordem decrescente de frequência.
+
+ Como Criar e Interpretar um Diagrama de Pareto em Testes de Software:
+ - Identifique os Problemas: Reúna dados sobre os defeitos ou falhas encontradas no software, como o número de falhas em cada módulo ou o tipo de defeito (por exemplo, falhas de interface, problemas de segurança, bugs de performance, etc.).
+ - Classifique e Conte: Organize os problemas por frequência, listando quantas vezes cada tipo de falha ocorre.
+ - Crie um Gráfico de Barras: Coloque os tipos de defeitos no eixo X (horizontal) e a frequência de ocorrências no eixo Y (vertical), em ordem decrescente.
+ - Adicione a Linha Acumulada: Calcule a porcentagem cumulativa de defeitos e plote uma linha no gráfico para mostrar o impacto acumulado.
+
+ O Diagrama de Pareto revela que a equipe deve focar primeiro em resolver os defeitos que são responsáveis pela maior parte dos problemas. Corrigir esses defeitos terá o maior impacto na melhoria da qualidade do software.
+
+ Os benefícios de utilizar a análise de pareto em um ambiente de qualidade de segurança de software são:
+ - Priorização: Permite que a equipe concentre seus esforços nos problemas mais críticos do software.
+ - Eficiência: Reduz o tempo gasto em problemas menos significativos e melhora a qualidade geral do produto mais rapidamente.
+ - Decisões baseadas em dados: Fornece uma base objetiva para decisões de priorização, permitindo a equipe realizar testes e resolver os problemas certos.
+
+ **Cenário de exemplo do uso de análise de Pareto em um projeto de software:**
+
+ Imaginamos que você trabalha em um projeto de software onde a equipe de QA está analisando os tipos de defeitos mais frequentes encontrados durante o teste. Aqui estão os dados coletados sobre as falhas nos testes:
+
+ ![Tabela de defeitos encontrados](imagens/tabela_de_defeitos.png)
+
+ - Passo 1:
+ Primeiro precisamos somar o total de defeitos:
+    - Total de ocorrências: 45 + 30 + 15 + 5 + 5 = 100
+
+ - Passo 2:
+ Agora calculamos as porcentagens de cada defeito:
+    ![Porcentagem de cada defeito](imagens/porcentagem_defeitos.png)
+
+ - Passo 3:
+ Então, calculamos a porcentagem acumulada de defeitos:
+    ![Porcentagem acumulada de cada defeito](imagens/porcentagem_acumulada.png)
+
+ - Passo 4:
+ Com base nisso, criamos o nosso *diagrama de Pareto* para visualizarmos melhor:
+
+    ![Diagrama exemplo de Pareto](imagens/diagrama_de_pareto.png)
+
+ Explicando este diagrama de pareto:
+ - Gráfico de barras: Este gráfico de barras mostra o número de ocorrências para cada tipo de defeito.
+ - Linha de porcentagem acumulada: A linha indica como os defeitos contribuem para o total acumulado. Podemos observar no exemplo que os dois primeiros tipos de defeitos(Defeitos de interface e Erros de desempenho) correspondem a 75% de todos os problemas do software.
+
+ Depois que fazemos a nossa análise de Pareto e montamos o nosso  diagrama, então podemos utilizar várias táticas ou estrégias de priorização dos defeitos a serem solucionados.
+
+ Usando o exemplo do diagrama acima, estas táticas de priorização são:
+
+ - **Prioridade por Impacto Crítico**
+ Descrição: Essa abordagem prioriza os defeitos que têm o maior impacto no usuário ou no funcionamento do sistema, mesmo que não sejam os mais frequentes.
+ Aplicação no Exemplo: Se os Problemas de Segurança (15% dos defeitos) puderem comprometer seriamente a segurança do sistema, eles podem ser priorizados acima de defeitos mais frequentes, como  Defeitos de Interface.
+ Vantagem: Garante que problemas críticos não passem despercebidos, especialmente quando relacionados a riscos de segurança ou falhas que podem causar grandes prejuízos.
+ - **Prioridade por Frequência de Ocorrência**
+ Descrição: Neste caso, os defeitos mais frequentes são priorizados, porque são responsáveis pela maioria dos problemas enfrentados pelos usuários.
+ Aplicação no Exemplo: Defeitos de Interface (45 ocorrências) e Erros de Desempenho (30 ocorrências) seriam priorizados, pois juntos representam 75% dos problemas.
+ Vantagem: Resolve problemas que afetam um grande número de usuários, melhorando a experiência geral rapidamente.
+ - **Prioridade por Custo de Correção**
+ Descrição: Os defeitos são priorizados com base no custo e no esforço necessários para corrigi-los. Defeitos que podem ser corrigidos rapidamente com baixo custo são tratados primeiro.
+ Aplicação no Exemplo: Se os Bugs de Lógica (5 ocorrências) podem ser corrigidos facilmente, mesmo com um impacto menor, podem ser tratados para obter resultados rápidos.
+ Vantagem: Permite que a equipe obtenha vitórias rápidas e faça progressos visíveis, o que pode ser motivador e estratégico.
+ - **Prioridade por Risco**
+ Descrição: Envolve priorizar defeitos que apresentam o maior risco para a estabilidade ou segurança do sistema. Aqui, o risco é uma combinação de probabilidade de ocorrência e severidade do  impacto.
+ Aplicação no Exemplo: Se os Problemas de Segurança são menos frequentes, mas representam um alto risco de falha catastrófica, eles podem ser tratados antes de defeitos com menor risco.
+ Vantagem: Reduz a probabilidade de falhas críticas ou catastróficas, protegendo a reputação do sistema e a segurança dos dados.
+ - **Prioridade por Valor para o Cliente**
+ Descrição: Foca nos defeitos que, quando corrigidos, proporcionam maior valor ao cliente ou usuário final. Isso pode incluir melhorias na usabilidade ou correção de problemas irritantes.
+ Aplicação no Exemplo: Se corrigir os Defeitos de Interface aumenta significativamente a satisfação do cliente, isso seria uma prioridade alta.
+ Vantagem: Melhora a experiência do usuário e a percepção do software de forma rápida.
+ - **Prioridade por Dependências**
+ Descrição: Correções são priorizadas com base em dependências técnicas, como defeitos que precisam ser resolvidos antes que outras correções possam ser implementadas.
+ Aplicação no Exemplo: Se Erros de Desempenho impedem a execução eficiente de outros testes ou funcionalidades, eles precisam ser resolvidos primeiro.
+ Vantagem: Garante um fluxo de trabalho mais eficiente, reduzindo bloqueios técnicos.
+
+Geralmente nos seus testes, você deve priorizar aquilo que tem mais reclamações, mais defeitos, mais falhas, daquilo que é mais usado, primeiro. Ou seja, utilizar a priorização por valor para o cliente.
+
+No entanto, também temos a **Análise de Cauda Longa**.
