@@ -22,8 +22,7 @@
      Para cada classe, selecionaríamos valores representativos, como, Classe válida: 18, 50 e 100. Classe inválida: 17 e 101.
 
      Por que usar partição de equivalência? Porque se um valor de uma classe funciona corretamente, é provável que todos os outros valores dessa classe também funcionem, economizando tempo e esforço.
- <br>
- <br>    
+
  - *Análise de Valor-Limite:*<br>
      Pensa em um sistema que tem limites, como um formulário que aceita números de 1 a 100. É justamente nos lmites que os bugs costumam aparecer. A Análise e Valor-Limite se concentra em testar os extremos de um intervalo, porque é mais provável que o sistema falhe nesses pontos.
      Então, com esta técnica, você testa valores imediatamente dentro, nos limites e fora do intervalo.
@@ -35,8 +34,7 @@
       - 11 (acima do limite máximo) para verificar se o sistema rejeita isso.
      
      Por que usar Análise de Valor-Limite? Porque os erros mais comuns acontecem quando você atinge ou ultrapassa os limites especificados do software.
- <br>
- <br>
+
  - *Tabelas de decisão:*<br>
      Essa técnica é útil quando o comportamento do software depende de várias condições. Pensa nela como uma tabela que organiza todas as combinações possíveis de condições e as ações que devem ser tomadas.
      Então, com esta técnica, você listas todas as condições e depois você define todas as combinações possíveis dessas condições e as ações correspondentes.
@@ -48,8 +46,7 @@
       - Se nenhuma das condições é satisfeita, ou seja, não é feriado e o usuário não é VIP, então não há desconto.
      
      Por que usar tabela de decisão? porque a tabela de decisão de ajuda a visualizar cada cenário e testar todas as combinações.
- <br>
- <br>
+
  - *Diagramas de Transição de Estado:*<br>
      É uma técnica usada quando o sistema tem estados diferentes e o comportamento muda com base no estado atual e em eventos específicos.
 
