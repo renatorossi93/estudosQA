@@ -14,11 +14,11 @@
  1. **Revisão de Requisitos e Documentos:**
  O primeiro passo é revisar a documentação fornecida, para que o QA saiba exatamente o que o software deve fazer, a documentação deve explicar:
      
-     - *Requisitos funcionais*, ou seja, o que o sistema do software deve fazer.
+ - *Requisitos funcionais*, ou seja, o que o sistema do software deve fazer.
      
-     - *Requisitos não funcionais*, ou seja, como o sistema deve se comportar, por exemplo: Qual desempenho deve ter, seus níveis de segurança, como sua usabilidade deve funcionar, etc.
+ - *Requisitos não funcionais*, ou seja, como o sistema deve se comportar, por exemplo: Qual desempenho deve ter, seus níveis de segurança, como sua usabilidade deve funcionar, etc.
      
-     - *Design do Sistema*, ou seja, fluxos e diagramas que mostrem como os componentes e funcionalidades do sistema interagem sozinhos e entre si.
+ - *Design do Sistema*, ou seja, fluxos e diagramas que mostrem como os componentes e funcionalidades do sistema interagem sozinhos e entre si.
 
  É como se o QA estivesse lendo o manual de instruções antes de começar a usar um equipamento novo. Ele quer entender como tudo deve funcionar para saber onde pode haver problemas.
 
@@ -31,11 +31,11 @@
  Identificar os riscos significa reconhecer partes do sistema que podem falhar ou que são críticas para o sucesso do software. Ou seja, pensar o que pode dar errado. Por exemplo: Se a página de pagamento de uma loja online falhar, os clientes não poderão finalizar suas compras, o que é um grande problema.
  Então, esses riscos podem ser relacionados a:
      
-     - *Complexidade do código*, ou seja, funcionalidades que são mais complicadas de implementar e, portanto, mais propensas a bugs.
+ - *Complexidade do código*, ou seja, funcionalidades que são mais complicadas de implementar e, portanto, mais propensas a bugs.
      
-     - *Impacto no negócio*, ou seja, funcionalidades que, se não funcionarem corretamente, terão um impacto significativo para o usuário ou para o negócio.
+ - *Impacto no negócio*, ou seja, funcionalidades que, se não funcionarem corretamente, terão um impacto significativo para o usuário ou para o negócio.
      
-     - *Histórico de defeitos*, ou seja, áreas do software que já apresentaram problemas no passado e precisam de atenção especial. É sempre bom criar e armazenar um histórico de defeitos de um software ou tipo de sistema para que você esteja preparado para o retorno deste defeito ou para um outro defeito parecido que possa vir a aparecer.
+ - *Histórico de defeitos*, ou seja, áreas do software que já apresentaram problemas no passado e precisam de atenção especial. É sempre bom criar e armazenar um histórico de defeitos de um software ou tipo de sistema para que você esteja preparado para o retorno deste defeito ou para um outro defeito parecido que possa vir a aparecer.
 
  4. **Priorização:**
  Nem todas as condições de teste possuem a mesma importância. Durante a análise dos testes, o QA prioriza as condições com base no risco e no impacto no negócio. As áreas mais críticas ou mais propensas a falhas recebem mais atenção, enquanto áreas menos importantes podem ser testadas com menos rigor.
@@ -61,8 +61,8 @@
 
  A Ánalise de Testes é crucial porque:    
      
-     - Evita erros graves, ou seja, o QA pode focar nas áreas que têm maior probabilidade de apresentar defeitos.
+ - Evita erros graves, ou seja, o QA pode focar nas áreas que têm maior probabilidade de apresentar defeitos.
      
-     - Melhora a eficiência, ou seja, a equipe pode otimizar o tempo e os recursos, concentrando-se no que mais importa.
+ - Melhora a eficiência, ou seja, a equipe pode otimizar o tempo e os recursos, concentrando-se no que mais importa.
      
-     - Aumenta a confiabilidade, ou seja, com uma análise bem feita, há maior chance do software atender às espectativas de qualidade e ter menos defeitos.
+ - Aumenta a confiabilidade, ou seja, com uma análise bem feita, há maior chance do software atender às espectativas de qualidade e ter menos defeitos.

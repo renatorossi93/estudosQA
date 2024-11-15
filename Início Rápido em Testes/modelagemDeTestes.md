@@ -45,8 +45,26 @@
       - Se não é feriado e o usuário é VIP, desconto de 15%.
       - Se nenhuma das condições é satisfeita, ou seja, não é feriado e o usuário não é VIP, então não há desconto.
      
-     Por que usar tabela de decisão? porque a tabela de decisão de ajuda a visualizar cada cenário e testar todas as combinações.
+     Por que usar tabela de decisão? Porque a tabela de decisão de ajuda a visualizar cada cenário e testar todas as combinações.
 
  - *Diagramas de Transição de Estado:*<br>
      É uma técnica usada quando o sistema tem estados diferentes e o comportamento muda com base no estado atual e em eventos específicos.
+     
+     Como funciona? Você cria um diagrama que mostra como o sistema passa de um estado para o outro e testa todas as transições possíveis para garantir que o sistema responde corretamente cada evento.
+     
+     Exemplo: Imagine que você está estando um caixa eletrônico que tem estados como "inativo", "esperando o cartão", "transação em andamento", e "saída de dinheiro".
+     Então você trabalha nessas transições possíveis, como:
+      - Quando o cartão é inserido, o sistema deve passar de "inativo" para "esperando o PIN".
+      - Se o PIN é correto, o sistema deve passar para "Transação e andamento".
+      - Se o PIN é incorreto várias vezes, o sistema deve bloquear o cartão.
 
+      Por que usar os diagramas de transição de estado? Porque sistemas que mudam de estado, como aplicativos que dpendem do contexto, precisam ser testados para garantir que respondem corretamente a eventos.
+
+ - *Casos de Uso:*<br>
+      Aqui os testes são baseados em como o usuário realmente interage com o sistema. Você foca nas funcionalidades do software e cria testes que refletem as ações do usuário.
+
+      Como funciona? Você analisa os casos de uso ou histórias do usuário que descrevem interações reais, depois cria cenários de teste que cobrem essas interações.
+
+      Exemplo: Se o software é uma plataforma de streaming, um caso de uso seria: "O usuário faz login, escolhe um filme e começa a assistir". Você cria testes que limitam isso, verificando se tudo funciona corretamente.
+
+      Por que usar casos de uso? Porque ajuda a garantir que as funcionalidades principais do sistema atendem às necessidades dos usuários finais.
