@@ -118,4 +118,70 @@
 
  Há sempre uma troca de papéis entre as duas pessoas, nunca ficando o tempo inteiro uma pessoa como piloto e outra como navegador. Essa frequência de trocas de papéis vai variando mas a ideia é que ambos os papéis contribuem para este conhecimento.
 
- Outro ponto muito importante para o funcionamento do *Pair Programmin* é a **comunicação**,
+ Outro ponto muito importante para o funcionamento do *Pair Programmin* é a **comunicação**, essencial para que o pair *programming funcione*, pois os programadores precisam discutir ideias e e abordagens para resolver os problemas que encontrarem.
+
+ O quarto ponto seria o contexto em que se deve utilizar o pair programming e há vários contextos possíveis, como resolução de bugs, revisão de códigos, pra qualquer coisa que o time ache que faz sentido.
+
+ **Ganhos de se utilizar o Pair Programming**
+
+ 1. *Solução otimizada:* É mais gente pensando na solução de um problema, ajudando a encontrar a melhor solução técnica para um problema.
+ 
+ 2. *Conhecimento compartilhado:* Quano se está trabalhando em dupla, se mitiga vários riscos e o compartilhamento de conhecimento técnico e de negócios contribui para um desenvolvimento melhor.
+ 
+ 3. *Code review a todo momento:* Enquanto um desenvolvedor exercer o papél de piloto, o navegador vai a todo momento discutindo e sugerindo soluções e outras maneiras de se resolver problemas, providenciando um code review em tempo real. 
+ 
+ 4. *Quebra de viéses:* Todo mundo, enquanto vai construindo a sua carreira, acaba adquirindo manias e viéses, o pair programming ajuda ajuda a pessoas trabalharem com pensamentos diferentes, melhorando no resultado do desenvolvimento.
+
+
+ ## Desk Check
+
+ Desk Check é uma demonstração de um item ou tarefa realizada pelo desenvolvedor para a equipe (QA, PO, Stakeholders) ao finalizar seu código e seus testes.
+ O objetivo é validar o que foi desenvolvido e confirmar se os critérios de aceite estão sendo atendidos.
+ O Desk Check deve ter um timebox máximo de 15 minutos. 
+
+ É bem comum hoje nas companhias termos um Kanban, onde o Desk Check acontece exatamente entre o fim do desenvolvimento e o code review.
+ Ali, no Desk Check, precisam estar o(s) desenvolvedor(es)  que fez aquela tarefa, o PO que é quem solicitou essa demanda e o QA que é quem sabe sabe o que aquela demanda fará e já pensou nos testes para aquela demanda e pode até já ter compartilhado com o dev os testes que serão realizados para aquela demanda.
+
+ 
+ ## Shift-Left Testing
+
+ O shif-left testing é o conceito de teste de software que se concentra em antecipar e iniciar atividades de teste o mais cedo possível no ciclo de vida do desenvolvimento de software. Ele envolve a mudança da abordagem tradicional de testar no final do ciclo de desenvolvimento para começar os testes mais cedo, preferencialmente durante as fases iniciais como o design e a codificação.
+
+ Não necessariamente você irá aplicar testes de fato, você pode estar aplicando mais qualidade utilizando alguns tipos de ferramentas.
+
+ **Ganhos de se utilizar o Shift-Left Testing**
+
+ 1. *Detecção precoce de defeitos:* Se não esperarmos até a etapa de testes para encontrar defeitos, podemos prevê-los muito antes, consequentemente reduzindo os custos de desenvolvimento do software, pois, quanto mais tarde se encontra um erro, falha ou bug, mais caro é para corrigi-lo.
+ 
+ 2. *Melhoria da qualidade do software:* Uma vez que estamos pensando em testes e em qualidade o quanto antes, o resultado é uma melhoria significativa do produto.
+
+ 3. *Redução de custos:* Como explicado anteriormente, quanto antes encontrarmos o erro, mais barato será o custo de resolvê-lo.
+ 
+ 4. *Aceleração do tempo de lançamento no mercado:* Se encontramos os erros desde cedo, os resolvemos antecipadamente e o resultado disso é uma aceleração do tempo de lançamento do software no mercado.
+ 
+ 5. *Maior colaboração entre equipes:* Buscando a qualidade desde o início do desenvolvimento do software, estamos disseminado mais qualidade entre os membros da equipe, colaborando entre si.
+ 
+ 6. *Feedback mais rápido:* Quanto antes encontramos o erro, o feedback desses erros, por consequência, será mais rápido, então poderemos trabalhar nele para melhorar a qualidade do que está sendo entregue.
+ 
+ 7. *Oferece vantagem competitiva entre concorrentes:* Com a aceleração do tempo de lançamento do software no mercado, oferecemos uma vantagem competitiva do nosso produto entre os concorrentes.
+
+ 
+ ## Quadrante de teste ágil
+ ### Agile testing quadrant
+
+ O Principal objetivo do quadrante de teste ágil é ajudar as equipes a organizar melhor as suas atividades de teste em um contexto ágil. 
+
+ O quadrante de teste ágil é dividido em quatro quadrantes menores e cada quadrante menor tem um objetivo específico.
+
+ *Q1 - O primeiro quadrante* é focado nos testes orientados para o time, sendo testes que apoiam o time de desenvolvimento, com a intenção de ajudar o time a compreender melhor os requisitos e desenvolver essas funcionalidades, sendo o foco principal os detalhes técnicos, lógica de programação, o comportamento esperado de cada unidade. É neste quadrante que trabalhamos com testes unitários e de componente. 
+ Estes testes (unitários de de componente) são o tipo de testes que devem ser automatizados.
+
+ *Q-2 O segundo quadrante* possui o foco mais voltado para a parte funcional. Neste quadrante temos os testes funcionais, testes da história de usuário, os protótipose simulações. Ele serve também de apoio para o time de desenvolvimento, mas, em um nível funcional.
+ Neste quadrante verificamos o software em um nível de critério de aceite, olhando com uma visão voltada para o cliente, para os stakeholders, validando se o que desenvolvemos está alinhado com o negócio.
+ Os testes deste quadrante podem ser executados de acordo de forma manual ou automatizada a depender da necessidade. Geralmente eles são bastante automatizados em um fluxo que esteja mais voltado para o sistema, mas, muitas vezes não faz sentido automatizar algo bem pontual pois, seria mais rápido e mais barato fazer aquele teste de forma manual, pois pode ser um teste que a gente não executa com tanta frequencia em um lugar que não mexemos muito dentro do sistema.
+
+ *Q-3 O terceiro quadrante*  é quando devemos possuir uma visão de explorar o sistema e descobrir novos cenários. Utilizamos, aqui, testes exploratórios, de  cenários, testes de usabilidade, teste de aceitação, testes alfa e beta, etc. Neste ponto estamos fazendo de uma forma manual, com uma visão total do usuário. Aqui podemos colocar o chapéu de testador em vários papéis do time, podendo ser um QA a executar esse tipo de teste, um BA(Business Analyst), um analista de negócio, um UX ou até o próprio cliente. A ideia é que tenhamos uma expectativa do ponto de vista do cliente.
+
+ *Q-4 O quarto quadrante* está muito focado nas tecnologias que vêm para apoiar o nosso negócio, voltado para ferramentas. O foco principal deste quadrante é garantir o desempenho, a segurança e até a usabilidade pode ser focada aqui caso pensamos em alguma ferramenta que venha apoiar o negócio para que garantiremos que o que estamos entregando esteja correto.
+
+ Então, utilizamos este quadrante de teste ágil no momento em que estamos planejando e organizando nossas atividades de teste, eles nos auxiliam dentro deste contexto ágil para que consigamos construir a nossa funcionalidade e a nossa história, olhando para um todo.
