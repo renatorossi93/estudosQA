@@ -1,0 +1,16 @@
+{
+  "name": "javascript-para-testers",
+  "version": "1.0.0",
+  "main": "teste1.js",
+  "scripts": {
+    "basics": "node teste1.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "chai": "^5.1.2",
+    "mocha": "^10.8.2"
+  }
+}
